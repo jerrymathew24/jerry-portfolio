@@ -62,3 +62,8 @@
   border-right: 2px solid #00f0ff;
   animation: blink-caret 1s step-end infinite;
 }
+
+@keyframes splash-bar {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}

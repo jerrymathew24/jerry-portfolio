@@ -6,6 +6,7 @@ import ParticleBackground from "../components/ParticleBackground";
 import CustomCursor from "../components/CustomCursor";
 import BackToTop from "../components/BackToTop";
 import Footer from "../components/Footer";
+import SplashScreen from "../components/SplashScreen";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -35,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth scroll-pt-16">
       <body className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col selection:bg-accent/20 selection:text-accent`}>
+        <SplashScreen />
         <CustomCursor />
         <ParticleBackground />
         <Navbar />

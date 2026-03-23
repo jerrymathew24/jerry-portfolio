@@ -21,7 +21,7 @@ export default function Home() {
           </div>
 
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl leading-relaxed mt-4 drop-shadow-sm">
-            I build scalable web and mobile applications with 2+ years of hands-on experience in React.js, Node.js, and NestJS.
+            I build scalable web and mobile applications with 2+ years of hands-on experience in React.js, Next.js, Node.js, and NestJS.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-10 w-full sm:w-auto">
@@ -30,7 +30,7 @@ export default function Home() {
               Download Resume
             </a>
             <a href="#projects" className="w-full sm:w-auto px-8 py-3.5 rounded-full border border-accent/30 text-accent font-medium transition-all hover:bg-accent/10 hover:border-accent/50 active:scale-95">
-              View Work
+              Projects
             </a>
             <a href="#contact" className="w-full sm:w-auto px-8 py-3.5 rounded-full border border-white/10 text-foreground/60 font-medium transition-all hover:border-white/20 hover:text-foreground active:scale-95">
               Get in Touch

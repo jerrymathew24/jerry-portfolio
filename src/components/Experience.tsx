@@ -1,3 +1,5 @@
+import ScrollReveal from "./ScrollReveal";
+
 export default function Experience() {
   const experiences = [
     {
@@ -17,30 +19,34 @@ export default function Experience() {
 
   return (
     <section id="experience" className="py-10 max-w-4xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center text-white">
-        Experience
-      </h2>
+      <ScrollReveal>
+        <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center text-white">
+          Experience
+        </h2>
+      </ScrollReveal>
 
       <div className="flex flex-col gap-8">
         {experiences.map((exp, index) => (
-          <div key={index} className="card p-8 rounded-2xl flex flex-col md:flex-row gap-8 group hover:card-hover-glow transition-shadow duration-500">
-            <div className="md:w-1/3 flex flex-col gap-1.5">
-              <h3 className="text-lg font-semibold text-white">{exp.role}</h3>
-              <p className="text-accent text-sm">{exp.company}</p>
-              <p className="text-xs text-foreground/30">{exp.period}</p>
-            </div>
+          <ScrollReveal key={index} delay={150}>
+            <div className="card p-8 rounded-2xl flex flex-col md:flex-row gap-8 group hover:card-hover-glow transition-shadow duration-500">
+              <div className="md:w-1/3 flex flex-col gap-1.5">
+                <h3 className="text-lg font-semibold text-white">{exp.role}</h3>
+                <p className="text-accent text-sm">{exp.company}</p>
+                <p className="text-xs text-foreground/30">{exp.period}</p>
+              </div>
 
-            <div className="md:w-2/3">
-              <ul className="flex flex-col gap-3">
-                {exp.highlights.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-foreground/80 text-base">
-                    <span className="text-accent mt-0.5">▸</span>
-                    <span className="leading-relaxed drop-shadow-sm">{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="md:w-2/3">
+                <ul className="flex flex-col gap-3">
+                  {exp.highlights.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-foreground/80 text-base">
+                      <span className="text-accent mt-0.5">▸</span>
+                      <span className="leading-relaxed drop-shadow-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
         ))}
       </div>
     </section>
