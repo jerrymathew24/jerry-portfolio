@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import React from 'react';
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
                 Have a project in mind?
               </h2>
               <p className="text-foreground/60 text-lg max-w-md">
-                Let's build something amazing together. Currently available for new opportunities.
+                Let&apos;s build something amazing together. Currently available for new opportunities.
               </p>
             </div>
             <a

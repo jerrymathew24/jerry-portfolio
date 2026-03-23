@@ -7,6 +7,7 @@ export default function SplashScreen() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMounted(true);
     const exitTimer = setTimeout(() => setPhase("exit"), 1800);
     const doneTimer = setTimeout(() => setPhase("done"), 2400);
