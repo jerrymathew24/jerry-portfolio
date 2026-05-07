@@ -5,7 +5,7 @@ export default function Experience() {
     {
       role: "Full Stack Developer",
       company: "Bairuhatech LLP",
-      period: "August 2025 – March 2026",
+      period: "February 2025 – March 2026",
       highlights: [
         "Led requirement analysis through 50+ hours of client discussions for a 15+ module system",
         "Designed and developed a Facility Management platform for service workflows and scheduling",
